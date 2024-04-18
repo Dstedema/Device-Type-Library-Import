@@ -22,7 +22,7 @@ class NetBox:
         self.token = settings.NETBOX_TOKEN
         self.handle = settings.handle
         self.netbox = None
-        self.ignore_ssl = settings.IGNORE_SSL_ERRORS
+        self.ignore_ssl = True
         self.modules = False
         self.connect_api()
         self.verify_compatibility()
